@@ -6,7 +6,7 @@ RUN apt install python-setuptools  -y
 RUN apt install python-dev -y
 RUN apt install build-essential  -y
 RUN apt install python3-mysqldb  -y
-RUN apt clean 
+  
 RUN apt install python pip
 RUN pip install flask -y
 COPY app.py /opt/
