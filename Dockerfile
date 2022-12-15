@@ -8,5 +8,6 @@ RUN apt install build-essential  -y
 RUN apt install python3-mysqldb  -y
 RUN apt install python pip3 -y
 RUN pip3 install flask -y
+#this is copying file to the container
 COPY app.py /opt/
 ENTRYPOINT FLASK_APP=/opt/app.py flask run --host=0.0.0.0 --port=8080
